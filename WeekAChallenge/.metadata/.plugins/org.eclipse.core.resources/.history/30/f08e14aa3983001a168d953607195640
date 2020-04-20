@@ -1,0 +1,5 @@
+package com.maurie.beans;
+
+public class Dog {
+
+}

@@ -1,0 +1,56 @@
+package com.maurie.driver;
+
+import java.util.Scanner;
+import com.maurie.beans.Cat;
+import com.maurie.beans.Dog;
+
+public class Driver {
+	public static Scanner sc = new Scanner(System.in);
+	public static String pet;
+	public static String name;
+	public static int age;
+	public static String other;
+	
+	public static void main(String[] args) {
+		
+		while (pet != "neither") {
+			Scanner in = new Scanner(System.in);
+			System.out.println("Do you have a cat or a dog?");
+			pet = in.nextLine();
+			
+			switch (pet) {
+				case "cat":
+					System.out.println("What is your cat's name?");
+					name = sc.nextLine();
+					System.out.println("You have a cat named " + name + ". Cute!");
+	
+					System.out.println("How old is your cat?");
+					age = sc.nextInt();
+					System.out.println(name + " is " + age + " years old.");
+					break;
+				case "dog":
+					System.out.println("What is your dog's name?");
+					name = sc.nextLine();
+					System.out.println("You have a dog named " + name + ". Cute!");
+	
+					System.out.println("How old is your dog?");
+					age = sc.nextInt();
+					System.out.println(name + " is " + age + " years old? Still a pup!");
+					break;
+				case "neither":
+					System.out.println("What kind of pet do you have?");
+					other = sc.nextLine();
+					System.out.println("A " + other + ", huh? Weird!");
+					break;
+				default:
+					break;
+			}
+		}
+		
+		
+		
+		
+	}
+
+}
+
